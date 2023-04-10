@@ -1,4 +1,5 @@
 /* Reset Code */
+
 body {
     padding: 0;
     margin: 0;
@@ -71,9 +72,12 @@ a:hover {
     outline: none
 }
 
+
 /* //Reset Code */
 
+
 /* colors code */
+
 .text-bl {
     color: #343a40;
 }
@@ -94,9 +98,12 @@ a:hover {
     background: #f3f3f3;
 }
 
+
 /* //colors code */
 
+
 /* bottom-to-top */
+
 a.move-top {
     position: fixed;
     bottom: 25px;
@@ -108,9 +115,12 @@ a.move-top span {
     font-size: 30px;
 }
 
+
 /* //bottom-to-top */
 
+
 /* navigation */
+
 .nav_w3ls {
     background: rgba(5, 211, 235, 0.9);
     position: absolute;
@@ -120,18 +130,23 @@ a.move-top span {
     z-index: 9;
 }
 
+
 /* CSS Document */
+
 .toggle-2,
 .toggle,
 [id^=drop] {
     display: none;
 }
 
+
 /* Giving a background-color to the nav container. */
+
 nav {
     margin: 0;
     padding: 0;
 }
+
 
 /* Since we'll have the "ul li" "float:left"
  * we need to add a clear after the container. */
@@ -142,8 +157,10 @@ nav:after {
     clear: both;
 }
 
+
 /* Removing padding, margin and "list-style" from the "ul",
  * and adding "position:reltive" */
+
 nav ul {
     padding: 0;
     margin: 0;
@@ -151,13 +168,17 @@ nav ul {
     position: relative;
 }
 
+
 /* Positioning the navigation items inline */
+
 nav ul li {
     margin: 0px;
     display: block;
 }
 
+
 /* Styling the links */
+
 nav a {
     color: #fff;
     font-size: 17px;
@@ -183,8 +204,10 @@ nav ul li ul li a:hover {
     transition: 0.5s all;
 }
 
+
 /* Hide Dropdowns by Default
  * and giving it a position of absolute */
+
 nav ul ul {
     display: none;
     position: absolute;
@@ -201,12 +224,16 @@ nav ul ul {
     right: 100px;
 }
 
+
 /* Display Dropdowns on Hover */
+
 nav ul li:hover>ul {
     display: inherit;
 }
 
+
 /* Fisrt Tier Dropdown */
+
 nav ul ul li {
     width: 170px;
     float: none;
@@ -237,10 +264,12 @@ nav ul ul li a {
     text-align: center;
 }
 
+
 /* Second, Third and more Tiers	
  * We move the 2nd and 3rd etc tier dropdowns to the left
  * by the amount of the width of the first tier.
 */
+
 nav ul ul ul li {
     position: relative;
     top: -60px;
@@ -250,12 +279,15 @@ nav ul ul ul li {
 
 
 /* Change ' +' in order to change the Dropdown symbol */
+
 li>a:only-child:after {
     content: '';
 }
 
+
 /* Media Queries
 --------------------------------------------- */
+
 @media(max-width: 991px) {
     nav a {
         font-size: 16px;
@@ -269,22 +301,19 @@ li>a:only-child:after {
     }
 }
 
-@media all and (max-width : 736px) {
+@media all and (max-width: 736px) {
     nav {
         margin: 0;
     }
-
     nav ul ul {
         margin-top: -10px;
     }
-
     /* Hide the navigation menu by default */
     /* Also hide the  */
     .toggle+a,
     .menu {
         display: none;
     }
-
     /* Stylinf the toggle lable */
     .toggle {
         display: block;
@@ -309,7 +338,6 @@ li>a:only-child:after {
         max-width: 75px;
         margin: 0 auto;
     }
-
     .menu .toggle {
         float: none;
         text-align: center;
@@ -323,7 +351,6 @@ li>a:only-child:after {
         font-weight: 400;
         background: transparent;
     }
-
     /* Display Dropdown when clicked on Parent Lable */
     [id^=drop]:checked+ul {
         display: block;
@@ -332,40 +359,33 @@ li>a:only-child:after {
         text-align: center;
         width: 100%;
     }
-
     /* Change menu item's width to 100% */
     nav ul li {
         width: 100%;
         padding: 0;
     }
-
     nav ul ul .toggle,
     nav ul ul a {
         padding: 0 40px;
     }
-
     nav ul ul ul a {
         padding: 0 80px;
     }
-
     nav a:hover,
     nav ul ul ul a {
         background-color: transparent;
     }
-
     nav ul li ul li .toggle,
     nav ul ul a,
     nav ul ul ul a {
         padding: 4px 20px;
         color: #FFF;
     }
-
     /* 
     nav ul li ul li .toggle,
     nav ul ul a {
         background-color: #212121;
     } */
-
     /* Hide Dropdowns by Default */
     nav ul ul {
         float: none;
@@ -376,37 +396,30 @@ li>a:only-child:after {
         padding: 1px 0 !important;
         /* has to be the same number as the "line-height" of "nav a" */
     }
-
     /* Hide menus on hover */
     nav ul ul li:hover>ul,
     nav ul li:hover>ul {
         display: none;
     }
-
     /* Fisrt Tier Dropdown */
     nav ul ul li {
         display: block;
         width: 100%;
         padding: 0;
     }
-
     nav ul ul ul li {
         position: static;
         /* has to be the same number as the "width" of "nav ul ul li" */
     }
-
     nav a {
         font-size: 14px !important;
         padding: 0;
         margin: 10px 0;
     }
-
     nav a:hover {}
-
     nav ul ul li a {
         font-size: 13px !important;
     }
-
     .nav_w3ls {
         background: transparent;
         padding: 0;
@@ -414,23 +427,25 @@ li>a:only-child:after {
     }
 }
 
-@media all and (max-width : 440px) {
+@media all and (max-width: 440px) {
     .toggle {
         font-size: 15px;
     }
 }
 
-@media all and (max-width : 375px) {
-
+@media all and (max-width: 375px) {
     nav a,
     .menu .toggle {
         font-size: 13px;
     }
 }
 
+
 /* //navigation */
 
+
 /* banner */
+
 .banner_w3lspvt {
     background: url(../images/2.jpg) no-repeat center;
     -webkit-background-size: cover;
@@ -440,10 +455,12 @@ li>a:only-child:after {
     background-size: cover;
     position: relative;
     z-index: 1;
+    opacity: 0.8;
 }
 
 .banner-text {
     padding: 15vw 0 16vw;
+    color: #FFF;
 }
 
 .banner-bot {
@@ -463,10 +480,9 @@ a.logo {
 }
 
 .banner-text.text-center p {
-    font-size: 14px;
+    font-size: 90px;
     font-weight: 100;
-    color: #efefef;
-    font-style: italic;
+    color: #000;
 }
 
 a.button-style {
@@ -486,7 +502,9 @@ a.button-style {
     border: none;
 }
 
+
 /* social icons */
+
 .social-icons {
     border-top: 1px solid rgba(255, 255, 255, 0.23);
     border-bottom: 1px solid rgba(255, 255, 255, 0.23);
@@ -505,10 +523,15 @@ a.button-style {
     font-size: 15px;
 }
 
+
 /* //social icons */
+
+
 /* //banner */
 
+
 /* bottom background image */
+
 .bottom-w3layouts {
     background: url(../images/bg.png) no-repeat center fixed;
     -webkit-background-size: cover;
@@ -553,7 +576,9 @@ h3.title:before {
     margin: 0 auto;
 }
 
+
 /* about */
+
 .welcome-left h3 {
     color: #000;
     font-size: 21px;
@@ -602,9 +627,12 @@ a.button-style-3 {
     padding: 6px;
 }
 
+
 /* //about */
 
+
 /* services */
+
 .abt-icon {
     width: 80px;
     height: 80px;
@@ -664,9 +692,12 @@ a.button-style.button-2-w3 {
     margin-top: 5em;
 }
 
+
 /* //services */
 
+
 /* news */
+
 h5.card-title a {
     color: #000;
     font-weight: 400;
@@ -687,9 +718,12 @@ h5.card-title a {
     font-size: 14.5px;
 }
 
+
 /* //news */
 
+
 /* classes */
+
 .about-in .card {
     padding: 2.5em 2em;
     border: none;
@@ -743,9 +777,12 @@ p.card-text {
     font-size: 14px;
 }
 
+
 /* //classes */
 
+
 /* gallery */
+
 .gal-img img {
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
@@ -761,7 +798,9 @@ p.card-text {
     box-shadow: 0 20px 40px -10px rgba(0, 0, 0, .3);
 }
 
+
 /* popup */
+
 .pop-overlay {
     position: fixed;
     top: 0px;
@@ -809,10 +848,15 @@ p.card-text {
     color: #4c86e5;
 }
 
+
 /* //popup */
+
+
 /* //gallery */
 
+
 /* contact */
+
 .w3pvt-webinfo_mail_grid_right {
     background: #f7f7f7;
     padding: 2em;
@@ -897,10 +941,15 @@ p.card-text {
     letter-spacing: 1px;
 }
 
+
 /* //contact */
 
+
 /* footer */
+
+
 /* copyright */
+
 p.copy-right-grids {
     font-size: 13px;
     letter-spacing: 2px;
@@ -911,8 +960,12 @@ p.copy-right-grids a {
     color: #f10900;
 }
 
+
 /* //copyright */
+
+
 /* social-icons */
+
 .w3social-icons ul li {
     display: inline-block;
 }
@@ -936,10 +989,15 @@ p.copy-right-grids a {
     box-shadow: 0px 0px 13px 2px #f10900;
 }
 
+
 /* //social-icons */
+
+
 /* //footer */
 
+
 /* responsive */
+
 @media(max-width: 1440px) {
     .popup {
         margin: 4em auto;
@@ -950,35 +1008,27 @@ p.copy-right-grids a {
     h3.title {
         font-size: 38px;
     }
-
     .welcome-left h3 {
         font-size: 19px;
     }
-
     .welcome-left h2 {
         font-size: 36px;
     }
-
     .welcome-left h6 {
         font-size: 16px;
     }
-
     .welcome-left p {
         font-size: 13px;
     }
-
     a.button-style-3 {
         padding: 12px 25px;
     }
-
     .card-body p {
         font-size: 14px;
     }
-
     .about-in .card h5.card-title {
         font-size: 23px;
     }
-
     p.card-text {
         font-size: 13px;
     }
@@ -989,19 +1039,15 @@ p.copy-right-grids a {
         padding: 2em;
         max-width: 450px;
     }
-
     .bottom-w3layouts {
         padding: 3em 0;
     }
-
     h3.title {
         font-size: 34px;
     }
-
     .welcome-left h2 {
         font-size: 34px;
     }
-
     .about-in {
         max-width: 500px;
         margin: 0 auto;
@@ -1012,7 +1058,6 @@ p.copy-right-grids a {
     a.logo {
         font-size: 46px;
     }
-
     .contact-text-w3pvt-webinf0 p {
         font-size: 14px;
     }
@@ -1022,19 +1067,15 @@ p.copy-right-grids a {
     .banner-text.text-center p {
         font-size: 13px;
     }
-
     .welcome-left h2 {
         font-size: 32px;
     }
-
     .welcome-left h3 {
         font-size: 17px;
     }
-
     p {
         font-size: 14px;
     }
-
     .contact-left-w3ls h3 {
         font-size: 24px;
     }
@@ -1044,48 +1085,37 @@ p.copy-right-grids a {
     h3.title {
         font-size: 32px;
     }
-
     .welcome-left h2 {
         font-size: 30px;
     }
-
     .welcome-left p {
         font-size: 12px;
     }
-
     a.button-style-3 {
         padding: 11px 22px;
     }
-
     .abt-icon {
         width: 70px;
         height: 70px;
     }
-
     .abt-icon span {
         font-size: 26px;
     }
-
     .abt-txt h4 {
         font-size: 23px;
     }
-
     .abt-txt {
         margin-left: 0;
     }
-
     .card-body p {
         font-size: 13px;
     }
-
     .popup {
         margin: 4em 1em;
     }
-
     .contact-left-w3ls h3 {
         font-size: 22px;
     }
-
     p.copy-right-grids {
         font-size: 12px;
         letter-spacing: 1px;
@@ -1097,41 +1127,32 @@ p.copy-right-grids a {
         padding: 1.5em;
         max-width: 390px;
     }
-
     a.logo {
         font-size: 40px;
     }
-
     .banner-text.text-center p {
         font-size: 12px;
     }
-
     .social-icons ul li a span {
         font-size: 14px;
     }
-
     .social-icons {
         width: 140px;
     }
-
     a.button-style {
         padding: 12px 18px;
         font-size: 13px;
     }
-
     .wrap {
         max-width: calc(100% - 3em);
     }
-
     .abt-icon {
         width: 65px;
         height: 65px;
     }
-
     .about-in .card h5.card-title {
         font-size: 23px;
     }
-
     .w3pvt-webinfo_mail_grid_right textarea {
         min-height: 150px;
     }
@@ -1141,26 +1162,21 @@ p.copy-right-grids a {
     .banner-text {
         padding: 22vw 0 20vw;
     }
-
     .banner-bot {
         max-width: 350px;
     }
-
     p {
         font-size: 13px;
     }
-
     .abt-grid .col-3,
     .abt-grid .col-9 {
         flex: 0 0 100%;
         max-width: 100%;
     }
-
     .abt-txt {
         margin-top: 2rem;
         text-align: center;
     }
-
     .w3social-icons ul li a {
         font-size: 14px;
         width: 35px;
@@ -1172,23 +1188,18 @@ p.copy-right-grids a {
     h3.title {
         font-size: 30px;
     }
-
     .welcome-left h3 {
         font-size: 15px;
     }
-
     .welcome-left h2 {
         font-size: 27px;
     }
-
     .card-body p {
         font-size: 12px;
     }
-
     p.card-text {
         font-size: 12px;
     }
-
     .contact-text-w3pvt-webinf0 p {
         font-size: 13px;
     }
@@ -1199,12 +1210,10 @@ p.copy-right-grids a {
         width: 58px;
         height: 58px;
     }
-
     .contact-left-w3ls span {
         font-size: 20px;
         line-height: 60px;
     }
-
     .contact-text-w3pvt-webinf0 p {
         font-size: 12px;
     }
@@ -1214,26 +1223,21 @@ p.copy-right-grids a {
     a.logo {
         font-size: 34px;
     }
-
     .banner-text.text-center p {
         font-size: 11px;
         margin: 5px 0 !important;
     }
-
     .social-icons ul li a span {
         font-size: 13px;
         margin: 0 8px;
     }
-
     .banner-bot {
         max-width: 330px;
         padding: 1em;
     }
-
     .social-icons {
         padding: 7px 0;
     }
-
     .about-in .card {
         padding: 2.5em 1em;
     }
@@ -1243,65 +1247,52 @@ p.copy-right-grids a {
     .banner-text.text-center p {
         font-size: 10.5px;
     }
-
     .banner-bot {
         max-width: 280px;
     }
-
     a.button-style {
         padding: 11px 14px;
         font-size: 12px;
     }
-
     .bottom-w3layouts {
         padding: 2em 0;
     }
-
     .wrap {
         max-width: calc(100% - 2em);
     }
-
     h3.title {
         font-size: 26px;
     }
-
     h3.title:before {
         width: 65px;
     }
-
     .welcome-left h2 {
         font-size: 25px;
     }
-
     .welcome-left h6 {
         font-size: 15px;
     }
-
     .welcome-left p {
         font-size: 11px;
     }
-
     p {
         font-size: 12px;
     }
-
     .contact-icon-wthree {
         width: 52px;
         height: 52px;
     }
-
     .contact-left-w3ls span {
         font-size: 17px;
         line-height: 54px;
     }
-
     .contact-text-w3pvt-webinf0 p {
         font-size: 11px;
     }
-
     .contact-left-w3ls h4 {
         font-size: 20px;
     }
 }
+
 
 /* //responsive */
